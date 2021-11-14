@@ -16,7 +16,8 @@ jobs:
         with:
           node-version: 14.x
       
-      - run: npm i
+      - run: npm ci
+      - run: npm i styled-components
       - run: npm run build
 
       - name: Deploy
